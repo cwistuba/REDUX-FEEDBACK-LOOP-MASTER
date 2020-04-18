@@ -16,17 +16,17 @@ class App extends Component {
         <Router>
           <header className="App-header">
             <h1 className="App-title">Feedback!</h1>
-            <Route exact path="/" component={FeelingPage} />
-            <Route exact path="/understand" component={UnderstandPage} />
-            <Route exact path="/supported" component={SupportedPage} />
-            <Route exact path="/comments" component={CommentsPage} />
-            <Route exact path="/review" component={ReviewPage} />
-            <Route exact path="/thankyou" component={ThankYouPage} />
             <h4>
               <i>Don't forget it!</i>
             </h4>
           </header>
           <br />
+          <Route exact path="/" component={FeelingPage} />
+          <Route exact path="/understand" component={UnderstandPage} />
+          <Route exact path="/supported" component={SupportedPage} />
+          <Route exact path="/comments" component={CommentsPage} />
+          <Route exact path="/review" component={ReviewPage} />
+          <Route exact path="/thankyou" component={ThankYouPage} />
         </Router>
       </div>
     );
