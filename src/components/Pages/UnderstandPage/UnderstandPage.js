@@ -4,7 +4,7 @@ class UnderstandPage extends Component {
   render() {
     return (
       <div>
-        <h1>UnderstandPage</h1>
+        <h1>Understand Page</h1>
       </div>
     );
   }

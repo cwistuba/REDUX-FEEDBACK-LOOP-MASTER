@@ -1,13 +1,14 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
 class FeelingPage extends Component {
   render() {
     return (
       <div>
-        <h1>FeelingPage</h1>
+        <h1>Feeling Page</h1>
       </div>
     );
   }
 }
 
-export default FeelingPage;
+export default connect()(FeelingPage);
