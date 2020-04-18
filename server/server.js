@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 5000;
 
-const resultsRouter = require("./results/results.router");
+const resultsRouter = require("./routes/results/results.router");
 
 /** ---------- MIDDLEWARE ---------- **/
 app.use(bodyParser.json()); // needed for angular requests

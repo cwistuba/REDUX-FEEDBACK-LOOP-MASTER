@@ -4,7 +4,12 @@ import axios from "axios";
 
 class ReviewPage extends Component {
   submitResults = (event) => {
-    const results = { something: "Yerp" };
+    const results = {
+      feeling: this.props.store.feelingReducer.feelingScore,
+      understanding: this.props.store.understandReducer.understandScore,
+      support: this.props.store.supportedReducer.supportScore,
+      comments: this.props.store.commentsReducer.inputComment,
+    };
 
     axios
       .post("/results", results)
