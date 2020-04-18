@@ -1,10 +1,22 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import axios from "axios";
 
 class ReviewPage extends Component {
-  render() {
-    submitResults = (event) => {};
+  submitResults = (event) => {
+    const results = { something: "Yerp" };
 
+    axios
+      .post("/results", results)
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((err) => {
+        console.warn(err);
+      });
+  };
+
+  render() {
     return (
       <div>
         <h1>Review Page</h1>
