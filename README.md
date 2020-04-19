@@ -1,9 +1,5 @@
-# Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+# Redux Feedback Loop
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
-
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+I created a multi-part form that allows users to leave feedback. The feedback form collects data over 4 views, "How are you feeling today?", "How well are you understanding the content?", "How well are you being supported?", and "Any comments you want to leave?". The separate review page displays the current feedback values and a submit button. Once all steps are complete, the app saves the feedback in my database.
