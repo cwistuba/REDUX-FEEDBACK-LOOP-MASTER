@@ -5,10 +5,10 @@ import axios from "axios";
 class ReviewPage extends Component {
   submitResults = (event) => {
     const results = {
-      feeling: this.props.store.feelingReducer,
-      understanding: this.props.store.understandReducer,
-      support: this.props.store.supportedReducer,
-      comments: this.props.store.commentsReducer,
+      feeling: this.props.store.feelingReducer.feelingScore,
+      understanding: this.props.store.understandReducer.understandScore,
+      support: this.props.store.supportedReducer.supportScore,
+      comments: this.props.store.commentsReducer.inputComment,
     };
 
     axios
